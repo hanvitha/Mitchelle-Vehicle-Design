@@ -1,0 +1,17 @@
+This is entirely designed and developed using java core APIs. Automation test cases are written using Junit framework.
+Junit framework and its dependent libraries are downloaded through maven.
+
+I have implemented following tasks:
+1) Implemented In-memory data storage. Also provided DAO interface which can be extended to any type of datasources.
+2) Given a generic way of adding validations to vehicle objects. validators are independent of Vehicle objects and new 
+validators can be easily added.
+3) Given a generic way of adding filters similar to validators.
+4) Given a generic way to implement client. Created a JSONclient which returns a JSON response for CRUD operations for a given request URL string.
+5) The CRUDVehicleController can be used for any kind of applications like REST service, command line or some custom client.
+6) written junits for the above mentioned functionality.
+7) All the crucial components like DAO, validators, filters and client are written in such a way that they are extensible and flexible.  
+
+
+Steps to Run:
+1) CrudVehicleController is the class that performs the CRUD operations on vehicle objects seamlessly. Junit class "TestCRUDVehicleController" can be run or edited to verify this task.
+2) Also this CrudVehicleController can be run from any other java class or a main method to test.
